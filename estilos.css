@@ -1,0 +1,107 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merienda One', cursive;
+}
+
+section {
+    height: 25vh;
+}
+
+.header {
+    /* background-color: #AF7AC5; */
+    background-image: linear-gradient(#62058a, #bf88d6);
+    height: 100vh;
+}
+.header .nav img {
+    color: whitesmoke;
+    padding: 10px 10px;
+}
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .nav .nav-menu {
+    display: flex;   
+    list-style: none;
+    padding: 20px 10px;
+}
+
+.header .nav .nav-menu a {
+    text-decoration:none;
+    color: whitesmoke;
+    font-weight: 500;
+    padding: 10px;
+   
+    transition: border bottom 1s;
+}
+
+.header .nav .nav-menu a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.header .header-top {
+    display: flex;
+    align-items: center;
+}
+
+.header .img-header {
+    width: 50vw;
+}
+
+.header .titulo {
+    color: whitesmoke;
+    font-size: 5vw;
+    text-shadow:2px 1px 10px rgb(14, 14, 14);
+}
+
+.main {
+    background-image: linear-gradient(#bf88d6, #9442b8 ); 
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: 
+    "section"
+    "section"
+    "section"
+    "section";
+    grid-template-rows: 20% 20% 20% 20% ;
+}
+.padre-flex {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+}
+
+.border {
+    border: solid 1px black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 
+    "section section section";
+    grid-template-columns: 33% 34% 33%;
+}
+
+.divs {
+    background-color: blueviolet;
+    height: 30vh;
+    border: solid 2px black;
+}
+
+.footer {
+    background-color: #bf88d6;
+}
+
+@media (max-width: 640px) {
+    .header .nav {
+        justify-content: center;
+    }
+}
