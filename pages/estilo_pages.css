@@ -51,6 +51,24 @@ body {
     text-shadow:2px 1px 10px rgb(14, 14, 14);
 }
 
+.div-req {
+    margin: 25px;
+    padding: 2%;
+    background-color: #bf88d6 ;
+}
+
+.sectionmargin {
+    margin: 50px;
+}
+
+.img-margin {
+    margin: 12%;
+}
+
+.h3-margin {
+    margin: 5px;
+}
+
 section {
     background-color: #bf88d6;
 }
@@ -86,8 +104,24 @@ footer {
    height: 40px;
  }
 
-@media (max-width: 640px) {
+/*------Mobile-------*/
+
+@media (max-width: 480px) {
     .header .nav {
         justify-content: center;
-    }
+}
+}
+/*------Tablet------*/
+@media (min-width: 481px) and (max-width: 1023px) {
+    .header .nav {
+        justify-content: center;
+}
+}
+
+/*------Desktop------*/
+
+@media (min-width: 1024px) {
+    .header .nav {
+        justify-content: center;
+}
 }

@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.contenedor {
+    width: 100%;
+    margin: 0% auto;
+    overflow: hidden;
+}
+
 body {
     font-family: 'Merienda One', cursive;
 }
@@ -52,6 +58,7 @@ section {
 
 .header .img-header {
     width: 50vw;
+    height: auto;
 }
 
 .header .titulo {
@@ -100,8 +107,25 @@ section {
     background-color: #bf88d6;
 }
 
-@media (max-width: 640px) {
+
+/*------Mobile-------*/
+
+@media (max-width: 480px) {
     .header .nav {
         justify-content: center;
-    }
+}
+}
+/*------Tablet------*/
+@media (min-width: 481px) and (max-width: 1023px) {
+    .header .nav {
+        justify-content: center;
+}
+}
+
+/*------Desktop------*/
+
+@media (min-width: 1024px) {
+    .header .nav {
+        justify-content: center;
+}
 }
